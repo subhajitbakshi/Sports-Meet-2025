@@ -8,23 +8,23 @@
     body {
         margin: 0;
         padding: 0;
+        background: #f2f4f7;
         font-family: "Segoe UI", Arial, sans-serif;
-        background: #f4f6f8;
         color: #222;
     }
 
     .page {
-        max-width: 900px;
+        max-width: 1000px;
         margin: 40px auto;
         background: #ffffff;
         padding: 40px 50px;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        box-shadow: 0 8px 22px rgba(0,0,0,0.08);
         border-radius: 10px;
     }
 
     .header {
         text-align: center;
-        border-bottom: 2px solid #ddd;
+        border-bottom: 2px solid #e0e0e0;
         padding-bottom: 20px;
         margin-bottom: 30px;
     }
@@ -32,28 +32,21 @@
     .school-name {
         font-size: 26px;
         font-weight: 700;
-        letter-spacing: 1px;
         text-transform: uppercase;
-    }
-
-    .affiliation {
-        font-size: 13px;
-        color: #555;
-        margin-top: 4px;
+        letter-spacing: 1px;
     }
 
     .event-title {
         font-size: 22px;
         font-weight: 600;
-        margin-top: 18px;
+        margin-top: 10px;
         color: #1a4fa3;
-        text-transform: uppercase;
     }
 
     .date {
         font-size: 14px;
-        margin-top: 6px;
-        color: #333;
+        margin-top: 5px;
+        color: #444;
     }
 
     .section {
@@ -70,21 +63,38 @@
         text-transform: uppercase;
     }
 
-    ol {
-        padding-left: 25px;
+    ul {
+        padding-left: 22px;
         font-size: 15px;
     }
 
-    ol li {
+    ul li {
         margin-bottom: 8px;
-        padding-left: 4px;
     }
 
-    .highlight-box {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    table th {
         background: #f0f4ff;
-        border-radius: 8px;
-        padding: 20px 25px;
-        margin-top: 20px;
+        color: #1a4fa3;
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table td {
+        padding: 9px;
+        border: 1px solid #ddd;
+        vertical-align: top;
+    }
+
+    table tr:nth-child(even) {
+        background: #fafafa;
     }
 
     .footer {
@@ -115,69 +125,80 @@
 
     <div class="header">
         <div class="school-name">Holy Family School, Nuta</div>
-        <div class="affiliation">Affiliated to CISCE (WB–438)</div>
-        <div class="event-title">Annual Sports Meet – 2026</div>
+        <div class="event-title">Annual Sports Meet 2026</div>
         <div class="date">Date: 20 December 2025</div>
     </div>
 
     <div class="section">
         <div class="section-title">I. Inaugural Ceremony</div>
-        <ol>
-            <li>Escorting of the Guests</li>
-            <li>Lighting of the Lamp</li>
-            <li>Prayer Dance</li>
-            <li>Welcome Address</li>
-            <li>Flag Hoisting</li>
-            <li>Address by the Chief Guest</li>
-            <li>Declaration of the Sports Meet</li>
-            <li>Torch Relay</li>
-            <li>Oath Taking</li>
-            <li>March Past</li>
-        </ol>
-    </div>
-
-    <div class="section highlight-box">
-        <div class="section-title">II. Track, Field and Cultural Events</div>
-        <ol start="11">
-            <li>100 Metre Race – House</li>
-            <li>Umbrella Dance – KG II</li>
-            <li>Chocolate Race – Pre-KG</li>
-            <li>Ball Race – KG I</li>
-            <li>Throw the Ball into the Bucket – KG II</li>
-            <li>Ring Drill – Classes I–IV</li>
-            <li>Maths Race – Classes I–IV</li>
-            <li>Pom Pom Dance – Pre-KG</li>
-            <li>200 Metre Race – House</li>
-            <li>Stick Dance – KG I</li>
-            <li>Spoon and Marble Race – Classes I–IV</li>
-            <li>Folk Dance – Classes VI–X</li>
-            <li>50 Metre Race – Classes I–IV</li>
-            <li>Sack Race – House</li>
-            <li>Dandiya Dance – Classes VI–X</li>
-            <li>Karate – House</li>
-            <li>Potato Race – Classes I–IV</li>
-            <li>Lezim and Dumbbell Combination – Classes VI–X</li>
-            <li>Yoga – Classes VI–X</li>
-            <li>Saree Drill – Classes VI–X</li>
-            <li>Aerobics and Pyramid – House</li>
-            <li>Relay Race – House</li>
-            <li>Ball Dance – Classes I–IV</li>
-            <li>Skipping – House</li>
-            <li>Passing the Ball through Tunnel – House</li>
-        </ol>
+        <ul>
+            <li><strong>MC by Students:</strong> Puja Miss, Aditi Miss, Sr. Bibiyana, Iman Sir, Rupa Miss, Nagen Sir</li>
+            <li><strong>Escorting of Guests:</strong> Coordinators</li>
+            <li><strong>Lighting of the Lamp:</strong> Rinku Miss</li>
+            <li><strong>Prayer Dance:</strong> Amrita Miss</li>
+            <li><strong>Welcome Speech:</strong> Fr. Andrew</li>
+            <li><strong>Flag Hoisting:</strong> Santanu Sir</li>
+            <li><strong>Chief Guest Address:</strong> Rt. Rev. Bishop Emeritus Cyprian Monis</li>
+            <li><strong>Declaration of Sports Meet:</strong> Official Opening</li>
+            <li><strong>Torch Relay:</strong> Santanu Sir, Norbart Sir</li>
+            <li><strong>Oath Taking:</strong> Santanu Sir</li>
+            <li><strong>March Past:</strong> Santanu Sir, Chaitali Miss, Nagen Sir, Iman Sir</li>
+        </ul>
     </div>
 
     <div class="section">
-        <div class="section-title">III. Valedictory Ceremony</div>
-        <ol start="36">
-            <li>Prize Distribution</li>
-            <li>Theme Dance</li>
-            <li>Vote of Thanks</li>
-        </ol>
+        <div class="section-title">II. Track, Field and Cultural Events</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Seq.</th>
+                    <th>Event</th>
+                    <th>Class / Category</th>
+                    <th>In-charge(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>1</td><td>100m Race</td><td>House</td><td>Sushanta Sir, Nagen Sir, Avik Sir</td></tr>
+                <tr><td>2</td><td>Umbrella Dance</td><td>KG II</td><td>Puja Miss</td></tr>
+                <tr><td>3</td><td>Chocolate Race</td><td>Pre-KG</td><td>Amrita Miss</td></tr>
+                <tr><td>4</td><td>Ball Race</td><td>KG I</td><td>Poushali Miss, Sr. Bibiyana</td></tr>
+                <tr><td>5</td><td>Throw the Ball into the Bucket</td><td>KG II</td><td>Puja Miss</td></tr>
+                <tr><td>6</td><td>Ring Drill</td><td>I to IV</td><td>Rupa Miss, Pradip Sir, Moumita Miss, Sushanta Sir</td></tr>
+                <tr><td>7</td><td>Maths Race</td><td>I to IV</td><td>Moumita Miss, Somnath Sir</td></tr>
+                <tr><td>8</td><td>Pom Pom Dance</td><td>Pre-KG</td><td>Amrita Miss</td></tr>
+                <tr><td>9</td><td>200m Race</td><td>House</td><td>Subhajit Sir, Avik Sir</td></tr>
+                <tr><td>10</td><td>Stick Dance</td><td>KG I</td><td>Poushali Miss</td></tr>
+                <tr><td>11</td><td>Spoon & Marble Race</td><td>I to IV</td><td>Tina Miss, Pradip Sir</td></tr>
+                <tr><td>12</td><td>Folk Dance</td><td>VI to X</td><td>Amrita Miss, Puja Miss</td></tr>
+                <tr><td>13</td><td>50m Race</td><td>I to IV</td><td>Rupa Miss, Nagen Sir, Tanmoy Sir</td></tr>
+                <tr><td>14</td><td>Sack Race</td><td>House</td><td>Somnath Sir, Subhajit Sir</td></tr>
+                <tr><td>15</td><td>Dandiya Dance</td><td>VI to X</td><td>Neha Miss, Aditi Miss</td></tr>
+                <tr><td>16</td><td>Karate</td><td>House</td><td>Karate Teacher (Coord. Bela Miss)</td></tr>
+                <tr><td>17</td><td>Potato Race</td><td>I to IV</td><td>Pradip Sir, Poulami Miss</td></tr>
+                <tr><td>18</td><td>Lezim & Dumbbell Combo</td><td>VI to X</td><td>Santanu Sir, Amrita Miss, Bela Miss, Avik Sir</td></tr>
+                <tr><td>19</td><td>Yoga</td><td>VI to X</td><td>Santanu Sir, Aditi Miss</td></tr>
+                <tr><td>20</td><td>Saree Drill</td><td>VI to X</td><td>Ipsita Miss, Rupa Miss, Priyanka Miss</td></tr>
+                <tr><td>21</td><td>Aerobics & Pyramid</td><td>House</td><td>Subhajit Sir, Tanmoy Sir</td></tr>
+                <tr><td>22</td><td>Relay Race</td><td>House</td><td>House Leaders (Coord. Santanu Sir)</td></tr>
+                <tr><td>23</td><td>Ball Dance</td><td>I to IV</td><td>Priyanka Miss, Poulami Miss, Nasima Miss, Somnath Sir, Tina Miss</td></tr>
+                <tr><td>24</td><td>Skipping</td><td>House</td><td>Iman Sir, Santanu Sir</td></tr>
+                <tr><td>25</td><td>Passing the Ball into Tunnel</td><td>House</td><td>Santanu Sir, Nagen Sir</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <div class="section-title">III. Valedictory Ceremony & Support</div>
+        <ul>
+            <li><strong>Prize Distribution:</strong> Ipsita Miss, Iman Sir, Chaitali Miss</li>
+            <li><strong>Theme Dance:</strong> Nasima Miss, Rupa Miss, Ipsita Miss, Amrita Miss</li>
+            <li><strong>Vote of Thanks:</strong> Sushanta Sir</li>
+        </ul>
     </div>
 
     <div class="footer">
-        © Holy Family School, Nuta | Annual Sports Meet 2026
+        Holy Family School, Nuta | Annual Sports Meet 2026
     </div>
 
 </div>
