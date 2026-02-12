@@ -2,205 +2,240 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Annual Sports Meet 2026 | Holy Family School, Nuta</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation - Subhajit & Sanghamitra</title>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Great+Vibes&family=Lato:wght@300;400&display=swap');
+
     body {
+        background-color: #2b0505; /* Very Dark Maroon for page background */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
         margin: 0;
-        padding: 0;
-        background: #f2f4f7;
-        font-family: "Segoe UI", Arial, sans-serif;
-        color: #222;
+        font-family: 'Lato', sans-serif;
+        overflow-x: hidden;
     }
 
-    .page {
-        max-width: 1000px;
-        margin: 40px auto;
-        background: #ffffff;
-        padding: 40px 50px;
-        box-shadow: 0 8px 22px rgba(0,0,0,0.08);
-        border-radius: 10px;
-    }
-
-    .header {
-        text-align: center;
-        border-bottom: 2px solid #e0e0e0;
-        padding-bottom: 20px;
-        margin-bottom: 30px;
-    }
-
-    .school-name {
-        font-size: 26px;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    .event-title {
-        font-size: 22px;
-        font-weight: 600;
-        margin-top: 10px;
-        color: #1a4fa3;
-    }
-
-    .date {
-        font-size: 14px;
-        margin-top: 5px;
-        color: #444;
-    }
-
-    .section {
-        margin-top: 35px;
-    }
-
-    .section-title {
-        font-size: 18px;
-        font-weight: 600;
-        color: #1a4fa3;
-        margin-bottom: 12px;
-        border-left: 5px solid #1a4fa3;
-        padding-left: 10px;
-        text-transform: uppercase;
-    }
-
-    ul {
-        padding-left: 22px;
-        font-size: 15px;
-    }
-
-    ul li {
-        margin-bottom: 8px;
-    }
-
-    table {
+    /* Main Card Container */
+    .card {
+        background: linear-gradient(135deg, #<img src="https://cdn-icons-png.flaticon.com/512/1164/1164620.png" #f6efe4 0%, #8000000 100%); /* Maroon Gradient */
         width: 100%;
-        border-collapse: collapse;
-        margin-top: 15px;
-        font-size: 14px;
+        max-width: 500px;
+        padding: 50px 30px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        border: 2px solid #d4af37; /* Gold Border */
+        text-align: center;
+        position: relative;
+        color: #d4af37; /* Gold Text */
+        border-radius: 15px;
+        overflow: hidden;
+        animation: cardEntrance 1s ease-out;
     }
 
-    table th {
-        background: #f0f4ff;
-        color: #1a4fa3;
-        padding: 10px;
-        text-align: left;
-        border: 1px solid #ddd;
+    /* Corner Decorations (CSS Shapes) */
+    .corner {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border: 2px solid #d4af37;
+        opacity: 0.5;
+    }
+    .top-left { top: 15px; left: 15px; border-right: none; border-bottom: none; border-radius: 10px 0 0 0; }
+    .bottom-right { bottom: 15px; right: 15px; border-left: none; border-top: none; border-radius: 0 0 10px 0; }
+
+    /* Typography */
+    h1, h2, h3 {
+        font-family: 'Cinzel', serif;
+        margin: 10px 0;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
 
-    table td {
-        padding: 9px;
-        border: 1px solid #ddd;
-        vertical-align: top;
+    .om {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        display: block;
+        animation: fadeInDown 1.5s ease-out;
     }
 
-    table tr:nth-child(even) {
-        background: #fafafa;
+    /* Photo Placeholder */
+    .photo-frame {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px auto;
+        border-radius: 50%;
+        border: 3px solid #d4af37;
+        overflow: hidden;
+        background-color: #4a0e0e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: zoomIn 1.2s ease-out;
+    }
+    
+    .photo-frame img {
+        width: 100%;
+        height: auto;
+        opacity: 0.8; /* Slight fade if using placeholder */
+    }
+
+    .host {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        margin-bottom: 5px;
+        color: #eebb44; /* Lighter Gold */
+        animation: fadeInUp 1.5s ease-out 0.2s backwards;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+        font-style: italic;
+        color: #cfb997; /* Muted Gold */
+        margin-bottom: 30px;
+        animation: fadeInUp 1.5s ease-out 0.4s backwards;
+    }
+
+    .couple-name {
+        font-family: 'Great Vibes', cursive; /* Script Font */
+        font-size: 2.8rem;
+        color: #fff; /* White for contrast on names, or keep gold */
+        text-shadow: 0 0 10px #d4af37; /* Glowing Gold Effect */
+        margin: 10px 0;
+        animation: scaleIn 1.5s ease-out 0.6s backwards;
+    }
+
+    .couple-sub {
+        font-size: 0.8rem;
+        color: #eebb44;
+        margin-bottom: 15px;
+        animation: fadeInUp 1.5s ease-out 0.8s backwards;
+    }
+
+    .divider {
+        font-size: 1.5rem;
+        margin: 20px 0;
+        opacity: 0.7;
+    }
+
+    /* Event Box Styling */
+    .event-box {
+        background: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        transition: transform 0.3s ease, background 0.3s ease;
+        animation: fadeInUp 1.5s ease-out 1.0s backwards;
+    }
+
+    .event-box:hover {
+        transform: translateY(-5px);
+        background: rgba(0, 0, 0, 0.4);
+        border-color: #d4af37;
+    }
+
+    .event-name {
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #fff;
+        border-bottom: 1px solid #d4af37;
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .event-details {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #eebb44;
     }
 
     .footer {
         margin-top: 40px;
-        text-align: center;
-        font-size: 13px;
-        color: #555;
-        border-top: 1px solid #ddd;
-        padding-top: 15px;
+        font-size: 0.85rem;
+        color: #cfb997;
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+        padding-top: 20px;
+        animation: fadeInUp 1.5s ease-out 1.2s backwards;
     }
 
-    @media print {
-        body {
-            background: none;
-        }
-        .page {
-            box-shadow: none;
-            margin: 0;
-            border-radius: 0;
-        }
+    /* Animations Keyframes */
+    @keyframes cardEntrance {
+        from { transform: scale(0.9); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
     }
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes zoomIn {
+        from { transform: scale(0); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes scaleIn {
+        from { transform: scale(0.8); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+
 </style>
 </head>
-
 <body>
 
-<div class="page">
+<div class="card">
+    <div class="corner top-left"></div>
+    <div class="corner bottom-right"></div>
 
-    <div class="header">
-        <div class="school-name">Holy Family School, Nuta</div>
-        <div class="event-title">Annual Sports Meet 2026</div>
-        <div class="date">Date: 20 December 2025</div>
+    <span class="om">|| Om Prajapataye Namah ||</span>
+
+    <div class="photo-frame">
+        <img src=couple.jpg alt="Wedding Couple Symbol">
     </div>
 
-    <div class="section">
-        <div class="section-title">I. Inaugural Ceremony</div>
-        <ul>
-            <li><strong>MC by Students:</strong> Puja Miss, Aditi Miss, Sr. Bibiyana, Iman Sir, Rupa Miss, Nagen Sir</li>
-            <li><strong>Escorting of Guests:</strong> Coordinators</li>
-            <li><strong>Lighting of the Lamp:</strong> Rinku Miss</li>
-            <li><strong>Prayer Dance:</strong> Amrita Miss</li>
-            <li><strong>Welcome Speech:</strong> Fr. Andrew</li>
-            <li><strong>Flag Hoisting:</strong> Santanu Sir</li>
-            <li><strong>Chief Guest Address:</strong> Rt. Rev. Bishop Emeritus Cyprian Monis</li>
-            <li><strong>Declaration of Sports Meet:</strong> Official Opening</li>
-            <li><strong>Torch Relay:</strong> Santanu Sir, Norbart Sir</li>
-            <li><strong>Oath Taking:</strong> Santanu Sir</li>
-            <li><strong>March Past:</strong> Santanu Sir, Chaitali Miss, Nagen Sir, Iman Sir</li>
-        </ul>
+    <div class="host">Mrs. Mandira Bakshi & Mr. Brajendra Lal Bakshi</div>
+    <div class="intro">Solicit your gracious presence and blessings to celebrate the sacred union of their son</div>
+
+    <div class="couple-name">Subhajit (Raja)</div>
+    <div class="couple-sub">Grandson of Late Pannalal Bakshi & Late Putul Rani Bakshi</div>
+    
+    <div class="intro" style="margin: 5px 0;">With</div>
+
+    <div class="couple-name">Sanghamitra (Puja)</div>
+    <div class="couple-sub">Daughter of Mrs. Anima Jash & Late Anil Kumar Jash</div>
+
+    <div class="divider">✦ &nbsp; ✦ &nbsp; ✦</div>
+
+    <div class="event-box">
+        <div class="event-name">Shubho Bibaho</div>
+        <div class="event-details">
+            Wednesday, 4th March 2026<br>
+            (19th Falgun, 1432)<br>
+            <strong>Venue:</strong> Bakshi Residence (Nija Basabhaban)<br>
+            Chanak, Mangalkote, Purba Bardhaman
+        </div>
     </div>
 
-    <div class="section">
-        <div class="section-title">II. Track, Field and Cultural Events</div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Seq.</th>
-                    <th>Event</th>
-                    <th>Class / Category</th>
-                    <th>In-charge(s)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>1</td><td>100m Race</td><td>House</td><td>Sushanta Sir, Nagen Sir, Avik Sir</td></tr>
-                <tr><td>2</td><td>Umbrella Dance</td><td>KG II</td><td>Puja Miss</td></tr>
-                <tr><td>3</td><td>Chocolate Race</td><td>Pre-KG</td><td>Amrita Miss</td></tr>
-                <tr><td>4</td><td>Ball Race</td><td>KG I</td><td>Poushali Miss, Sr. Bibiyana</td></tr>
-                <tr><td>5</td><td>Throw the Ball into the Bucket</td><td>KG II</td><td>Puja Miss</td></tr>
-                <tr><td>6</td><td>Ring Drill</td><td>I to IV</td><td>Rupa Miss, Pradip Sir, Moumita Miss, Sushanta Sir</td></tr>
-                <tr><td>7</td><td>Maths Race</td><td>I to IV</td><td>Moumita Miss, Somnath Sir</td></tr>
-                <tr><td>8</td><td>Pom Pom Dance</td><td>Pre-KG</td><td>Amrita Miss</td></tr>
-                <tr><td>9</td><td>200m Race</td><td>House</td><td>Subhajit Sir, Avik Sir</td></tr>
-                <tr><td>10</td><td>Stick Dance</td><td>KG I</td><td>Poushali Miss</td></tr>
-                <tr><td>11</td><td>Spoon & Marble Race</td><td>I to IV</td><td>Tina Miss, Pradip Sir</td></tr>
-                <tr><td>12</td><td>Folk Dance</td><td>VI to X</td><td>Amrita Miss, Puja Miss</td></tr>
-                <tr><td>13</td><td>50m Race</td><td>I to IV</td><td>Rupa Miss, Nagen Sir, Tanmoy Sir</td></tr>
-                <tr><td>14</td><td>Sack Race</td><td>House</td><td>Somnath Sir, Subhajit Sir</td></tr>
-                <tr><td>15</td><td>Dandiya Dance</td><td>VI to X</td><td>Neha Miss, Aditi Miss</td></tr>
-                <tr><td>16</td><td>Karate</td><td>House</td><td>Karate Teacher (Coord. Bela Miss)</td></tr>
-                <tr><td>17</td><td>Potato Race</td><td>I to IV</td><td>Pradip Sir, Poulami Miss</td></tr>
-                <tr><td>18</td><td>Lezim & Dumbbell Combo</td><td>VI to X</td><td>Santanu Sir, Amrita Miss, Bela Miss, Avik Sir</td></tr>
-                <tr><td>19</td><td>Yoga</td><td>VI to X</td><td>Santanu Sir, Aditi Miss</td></tr>
-                <tr><td>20</td><td>Saree Drill</td><td>VI to X</td><td>Ipsita Miss, Rupa Miss, Priyanka Miss</td></tr>
-                <tr><td>21</td><td>Aerobics & Pyramid</td><td>House</td><td>Subhajit Sir, Tanmoy Sir</td></tr>
-                <tr><td>22</td><td>Relay Race</td><td>House</td><td>House Leaders (Coord. Santanu Sir)</td></tr>
-                <tr><td>23</td><td>Ball Dance</td><td>I to IV</td><td>Priyanka Miss, Poulami Miss, Nasima Miss, Somnath Sir, Tina Miss</td></tr>
-                <tr><td>24</td><td>Skipping</td><td>House</td><td>Iman Sir, Santanu Sir</td></tr>
-                <tr><td>25</td><td>Passing the Ball into Tunnel</td><td>House</td><td>Santanu Sir, Nagen Sir</td></tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="section">
-        <div class="section-title">III. Valedictory Ceremony & Support</div>
-        <ul>
-            <li><strong>Prize Distribution:</strong> Ipsita Miss, Iman Sir, Chaitali Miss</li>
-            <li><strong>Theme Dance:</strong> Nasima Miss, Rupa Miss, Ipsita Miss, Amrita Miss</li>
-            <li><strong>Vote of Thanks:</strong> Sushanta Sir</li>
-        </ul>
+    <div class="event-box">
+        <div class="event-name">Priti Sammelan</div>
+        <div class="event-details">
+            Friday, 6th March 2026 | 6:00 PM onwards<br>
+            (21st Falgun, 1432)<br>
+            <strong>Venue:</strong> Prayas Marriage Hall<br>
+            Guskara Bus Stand, Purba Bardhaman
+        </div>
     </div>
 
     <div class="footer">
-        Holy Family School, Nuta | Annual Sports Meet 2026
+        With Best Compliments From:<br>
+        <strong>Bakshi Family & Relatives</strong><br><br>
+        RSVP: +91 94749 13929
     </div>
-
 </div>
 
 </body>
